@@ -6,5 +6,9 @@ jobs:
   run-github-actions:
     runs-on: ubuntu-latest
     steps:
-      - name: view files
-        run: ls -a
+      - name: view files before checkout
+        run: ls
+      - name: checkout actions
+        uses: actions/checkout@v2
+      - name: view files after checkout
+        run: ls
