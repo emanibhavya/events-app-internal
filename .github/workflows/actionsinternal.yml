@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: view files
-        run: echo ls -a
+        run: ls -a
